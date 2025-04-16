@@ -6,6 +6,10 @@ app.get('/',(req, res) => {
     res.send('Server del mio blog')
 })
 
+app.listen(port, () => {
+    console.log(`app listening on port ${port}`)
+})
+
 const postArray = [
     {
         titolo: 'Ciambellone',
@@ -38,3 +42,4 @@ const postArray = [
         tags: ['dolci', 'dolci tradizionali', 'cucina', 'fatto in casa']
     }
 ]
+
