@@ -43,3 +43,6 @@ const postArray = [
     }
 ]
 
+app.get('/bacheca', (req, res) => {
+    res.json(postArray)
+})
